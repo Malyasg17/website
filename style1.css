@@ -5,6 +5,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background: #060c21;
     font-family: 'poppins',sans-serif;
@@ -125,4 +126,11 @@ visibility: hidden;
 {
     color:blue;
     background: #fff;
+}
+.box .content h4
+{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
 }
