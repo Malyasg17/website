@@ -6,7 +6,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 100vh;
     background: #060c21;
     font-family: 'poppins',sans-serif;
@@ -15,7 +15,10 @@ body{
 {
     position: relative;
     width: 90%;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
     grid-template-rows: auto;
     grid-gap: 0 40px;
@@ -109,18 +112,18 @@ background:rgba(255,255,255,0.05);
  margin:20px 0 0;
  padding: 10px 40px;
  text-decoration: none;
-display: inline-block;
+display: inline-flex;
 color:rgb(211, 63, 154);
 transition: 0.5s;
-transform: translateY(-40px);
-opacity: 0;
+transform: translateY(-30px);
+opacity: 3;
 visibility: hidden;
 
 }
 .box:hover .content a
 {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 3;
     visibility: visible;
 } 
 .box .content a:hover
