@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -30,9 +31,9 @@ body{
     border: 1px solid black;
 
 }
-.container .box::before
+.container .box:before
 {
-    content: "none";
+    content: '';
     position: absolute;
     top:-2px;
     left: -2px;
@@ -76,25 +77,25 @@ background:rgba(255,255,255,0.05);
 .box .content h2
 {
     position: absolute;
-    top: -60px;
+    top: 20px;
     right: 20px;
     margin: 0;
     padding: 0;
-    font-size: 10em;
+    font-size: 8em;
     color: rgba(255,255,255,.05);
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
 .box:hover .content h2
 {
-    top: -140px;
+    top: -70px;
 }
 .box .content h3
 {
     margin: 0 0 10px;
     padding: 0;
     font-size: 24px;
-    color: #fff;
+    color: orange;
 }
 .box .content p
 {
@@ -106,10 +107,10 @@ background:rgba(255,255,255,0.05);
 {
  position: relative;
  margin:20px 0 0;
- padding: 10px 20px;
+ padding: 10px 40px;
  text-decoration: none;
 display: inline-block;
-color:#fff;
+color:rgb(211, 63, 154);
 transition: 0.5s;
 transform: translateY(-40px);
 opacity: 0;
@@ -132,5 +133,5 @@ visibility: hidden;
     margin: 0 0 10px;
     padding: 0;
     font-size: 20px;
-    color: #fff;
+    color:rosybrown;
 }
